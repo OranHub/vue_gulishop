@@ -21,5 +21,6 @@ yarn lint
 ```
 
 ### Customize configuration
+哈哈哈
 See [Configuration Reference](https://cli.vuejs.org/config/).
 哈哈哈
