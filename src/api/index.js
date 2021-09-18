@@ -20,4 +20,5 @@ export const reqBannerList = ()=> myAxios.get(`/mock/banner`)
 //mock获取列表请求
 export const reqFloorList = ()=> myAxios.get(`/mock/floor`)
 
-
+//mock获取search请求
+export const reqSearchInfo = ()=> myAxios.get(`/mock/searchinfo`)

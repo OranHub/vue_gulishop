@@ -4,7 +4,11 @@
       <div class="fl key brand">品牌</div>
       <div class="value logos">
         <ul class="logo-list">
-          <li v-for="(trademark, index) in trademarkList" :key="trademark.tmId">
+          <li
+            v-for="(trademark, index) in trademarkList"
+            :key="trademark.tmId"
+            :index="index"
+          >
             {{ trademark.tmName }}
           </li>
         </ul>
@@ -18,6 +22,7 @@
       class="type-wrap"
       v-for="(attr, index) in attrsList"
       :key="attr.attrId"
+      :index="index"
     >
       <div class="fl key">{{ attr.attrName }}</div>
       <div class="fl value">

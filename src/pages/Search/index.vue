@@ -53,6 +53,7 @@
                 class="yui3-u-1-5"
                 v-for="(goods, index) in goodsList"
                 :key="goods.id"
+                :index="index"
               >
                 <div class="list-wrap">
                   <div class="p-img">
@@ -142,7 +143,7 @@ export default {
     getSearchInfo() {
       //dispatch 如果传递多个参数，那么多个参数必须构成一个对象去传递
       //也就是说 dispatch只能传递一个参数
-      this.$store.dispatch("getSearchInfo", {});
+      this.$store.dispatch("get_searchInfo");
     },
   },
   computed: {

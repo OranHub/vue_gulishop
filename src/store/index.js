@@ -4,6 +4,7 @@ Vue.use(Vuex)
 
 import home from './home.js'
 import users from './users.js'
+import search from './search.js'
 
 const state = {
 
@@ -33,7 +34,8 @@ const store = new Vuex.Store({
     state,mutations,actions,getters,
     modules:{
         home,
-        users
+        users,
+        search
     }
 })
 
